@@ -1,12 +1,10 @@
 import React from "react";
 import './index'
-class CartItem extends React.Component {
+class Tooltip extends React.Component {
     constructor () {
         super();
         this.state = {
-          
-          msg:'',
-          top:''
+          msg:''
         }
     }
     mouseOver = () => {
@@ -29,7 +27,7 @@ class CartItem extends React.Component {
       }
 
     render (){
-        const { message ,msg ,top} = this.state;
+        const {msg } = this.state;
         return( 
             <div  style={{ display: 'flex',
             alignItems: 'center',
@@ -37,7 +35,7 @@ class CartItem extends React.Component {
             height: '100vh'
     }}>
 
-        {/* right tool tip  */}
+        {/*  tool tip  */}
                 <div className="tooltip" style={ {} }>
                 <div onMouseOver={this.mouseOver} onMouseLeave={this.mouseDown}>Hover Over Me
                     </div> 
@@ -50,4 +48,4 @@ class CartItem extends React.Component {
     }
 }
 
-export default CartItem;
+export default Tooltip;

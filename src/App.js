@@ -1,10 +1,10 @@
+import { Tooltip } from "bootstrap";
 import React from "react";
-import CartItem from './CartItem';
+import ToolTip from './Tooltip';
 function App() {
   return (
     <div className='App'>
-    
-      <CartItem />
+      <ToolTip />
     </div>
   );
 }
